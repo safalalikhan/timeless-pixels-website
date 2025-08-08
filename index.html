@@ -164,6 +164,9 @@
                         <p><strong>Phone:</strong> +64 27 309 1113</p>
                     </div>
                     <form class="contact-form" id="contact-form" name="contact" method="POST" data-netlify="true">
+                        <!-- THE FIX: This hidden input is required for AJAX form submissions on Netlify -->
+                        <input type="hidden" name="form-name" value="contact" />
+                        
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name">
@@ -206,7 +209,7 @@
     <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
         <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
         <div class="lightbox-content" id="lightbox-content"></div>
-        <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">‹</button>
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">›</button>
         <button class="lightbox-next" id="lightbox-next" aria-label="Next image">›</button>
     </div>
 
