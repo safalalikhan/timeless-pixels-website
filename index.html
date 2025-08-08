@@ -11,7 +11,8 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+    <!-- CHANGE: Updated to load Cormorant Garamond, Lato, and Dancing Script -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Dancing+Script:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -43,12 +44,13 @@
                 <div class="hero-content">
                     <div class="hero-text reveal">
                         <h1>The Rover's Tale</h1>
+                        <!-- REMOVED: text-cursive class -->
                         <p>Capturing life's most precious moments with an artistic eye and refined sensibility. Every frame tells a story.</p>
                         <a href="#works" class="cta-button reveal delay-1">View Portfolio</a>
                     </div>
                     <div class="hero-image reveal delay-2">
                         <div class="photo-frame">
-                            <img src="https://images.unsplash.com/photo-1598276703112-a7c53b2d7a22?w=400&h=500&fit=crop" alt="Stylish couple in an intimate portrait" />
+                            <img src="assets/images/hero-main.jpg" alt="Stylish couple in an intimate portrait" />
                         </div>
                     </div>
                 </div>
@@ -60,9 +62,10 @@
                 <h2 class="section-title">About Aakash Mohan</h2>
                 <div class="about-content">
                     <div class="about-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Photographer Aakash Mohan" />
+                        <img src="assets/images/about-aakash.jpg" alt="Photographer Aakash Mohan" />
                     </div>
                     <div class="about-text">
+                        <!-- REMOVED: text-cursive class -->
                         <p>Welcome to my world of visual storytelling. I'm Aakash Mohan, the passionate photographer behind Rover's Tale (roverstale), dedicated to capturing the essence of life's most beautiful moments through my lens.</p>
                         <p>With years of experience, I believe that every photograph should be a work of art that speaks to the soul, creating truly timeless pixels.</p>
                     </div>
@@ -110,21 +113,41 @@
             <div class="container reveal">
                 <h2 class="section-title">My Works</h2>
                 <div class="gallery" id="gallery">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=400&h=300&fit=crop" alt="Wedding Photography" />
-                        <div class="gallery-hover"><span class="gallery-title">Wedding Bliss</span></div>
+                    <div class="gallery-item" data-images="assets/images/wedding-01.jpg,assets/images/wedding-02.jpg,assets/images/wedding-03.jpg">
+                        <div class="gallery-image-wrapper">
+                            <img src="assets/images/works-wedding-thumb.jpg" alt="Wedding Photography" />
+                        </div>
+                        <div class="gallery-item-content">
+                            <h3>Wedding Bliss</h3>
+                            <p>Capturing the magic and emotion of your special day.</p>
+                        </div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=300&fit=crop&crop=face" alt="Portrait Photography" />
-                        <div class="gallery-hover"><span class="gallery-title">Timeless Portraits</span></div>
+                    <div class="gallery-item" data-images="assets/images/portrait-01.jpg,assets/images/portrait-02.jpg,assets/images/portrait-03.jpg">
+                        <div class="gallery-image-wrapper">
+                            <img src="assets/images/works-portrait-thumb.jpg" alt="Portrait Photography" />
+                        </div>
+                        <div class="gallery-item-content">
+                            <h3>Timeless Portraits</h3>
+                            <p>Professional portraits that reveal your unique personality.</p>
+                        </div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=400&h=300&fit=crop" alt="Family Photography" />
-                        <div class="gallery-hover"><span class="gallery-title">Family Moments</span></div>
+                    <div class="gallery-item" data-images="assets/images/family-01.jpg,assets/images/family-02.jpg,assets/images/family-03.jpg">
+                        <div class="gallery-image-wrapper">
+                             <img src="assets/images/works-family-thumb.jpg" alt="Family Photography" />
+                        </div>
+                        <div class="gallery-item-content">
+                            <h3>Family Moments</h3>
+                            <p>Preserving precious family memories with authenticity.</p>
+                        </div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=300&fit=crop" alt="Landscape Photography" />
-                        <div class="gallery-hover"><span class="gallery-title">Fine Art</span></div>
+                    <div class="gallery-item" data-images="assets/images/art-01.jpg,assets/images/art-02.jpg,assets/images/art-03.jpg">
+                        <div class="gallery-image-wrapper">
+                            <img src="assets/images/works-art-thumb.jpg" alt="Landscape Photography" />
+                        </div>
+                        <div class="gallery-item-content">
+                            <h3>Fine Art</h3>
+                            <p>Artistic landscapes and abstract compositions.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,6 +159,7 @@
                     <button class="test-prev" aria-label="Previous testimonial">‹</button>
                     <div class="testimonial-viewport" id="testimonial-viewport">
                         <div class="testimonial-slide">
+                            <!-- REMOVED: text-cursive class -->
                             <p>"The most beautiful wedding photos we could have ever imagined. Every shot is a masterpiece that captures our love perfectly."</p>
                             <div class="client">— Sarah & Michael</div>
                         </div>
@@ -164,9 +188,7 @@
                         <p><strong>Phone:</strong> +64 27 309 1113</p>
                     </div>
                     <form class="contact-form" id="contact-form" name="contact" method="POST" data-netlify="true">
-                        <!-- THE FIX: This hidden input is required for AJAX form submissions on Netlify -->
                         <input type="hidden" name="form-name" value="contact" />
-                        
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name">
@@ -209,7 +231,7 @@
     <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
         <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
         <div class="lightbox-content" id="lightbox-content"></div>
-        <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">›</button>
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">‹</button>
         <button class="lightbox-next" id="lightbox-next" aria-label="Next image">›</button>
     </div>
 

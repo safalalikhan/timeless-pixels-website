@@ -39,7 +39,6 @@ function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
     themeToggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`);
-    // REFACTOR: Use class toggle for visual state
     if (theme === 'dark') {
         themeToggle.classList.add('dark-active');
     } else {
@@ -53,7 +52,6 @@ themeToggle.addEventListener('click', () => {
     applyTheme(newTheme);
 });
 
-// Apply saved theme on initial load
 applyTheme(localStorage.getItem('theme') || 'light');
 
 
@@ -83,22 +81,27 @@ const spyObserver = new IntersectionObserver((entries) => {
 sections.forEach(section => spyObserver.observe(section));
 
 
-// ---------- Gallery Lightbox ----------
+// ---------- Gallery Lightbox (Updated Logic) ----------
 const gallery = document.getElementById('gallery');
 const lightbox = document.getElementById('lightbox');
 const lightboxContent = document.getElementById('lightbox-content');
 const lbPrev = document.getElementById('lightbox-prev');
 const lbNext = document.getElementById('lightbox-next');
 const lbClose = document.getElementById('lightbox-close');
-let galleryImgs = [];
+
+let lightboxImages = [];
 let currentIndex = 0;
 
 if (gallery) {
-    galleryImgs = Array.from(gallery.querySelectorAll('img'));
     gallery.addEventListener('click', (e) => {
         const item = e.target.closest('.gallery-item');
         if (!item) return;
-        currentIndex = galleryImgs.indexOf(item.querySelector('img'));
+
+        const imagesAttr = item.dataset.images;
+        if (!imagesAttr) return;
+
+        lightboxImages = imagesAttr.split(',');
+        currentIndex = 0;
         openLightbox();
     });
 }
@@ -118,18 +121,25 @@ function closeLightbox() {
 }
 
 function renderLightboxImage() {
-    if (galleryImgs[currentIndex]) {
-        lightboxContent.innerHTML = `<img src="${galleryImgs[currentIndex].src}" alt="${galleryImgs[currentIndex].alt}" />`;
+    if (lightboxImages.length > 0) {
+        const src = lightboxImages[currentIndex];
+        const img = new Image();
+        img.onload = () => {
+            lightboxContent.innerHTML = '';
+            lightboxContent.appendChild(img);
+        };
+        img.src = src;
+        lightboxContent.innerHTML = `<p style="color: white;">Loading...</p>`;
     }
 }
 
 function showPrevImage() {
-    currentIndex = (currentIndex - 1 + galleryImgs.length) % galleryImgs.length;
+    currentIndex = (currentIndex - 1 + lightboxImages.length) % lightboxImages.length;
     renderLightboxImage();
 }
 
 function showNextImage() {
-    currentIndex = (currentIndex + 1) % galleryImgs.length;
+    currentIndex = (currentIndex + 1) % lightboxImages.length;
     renderLightboxImage();
 }
 
@@ -180,6 +190,7 @@ if (viewport) {
     function goTo(newIndex) {
         index = (newIndex + total) % total;
         update();
+        startAutoplay();
     }
     function startAutoplay() {
         stopAutoplay();
