@@ -3,4 +3,4 @@ This repository contains the source code for the official portfolio website for 
 
 The site is built with HTML, CSS, and JavaScript and is deployed via Netlify.
 
-Live Site: 
+Live Site: https://timelesspixels.netlify.app/
