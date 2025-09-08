@@ -1,237 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timeless Pixels by Rover's Tale</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Timeless Pixels by Rover's Tale</title>
+  <meta name="description" content="Timeless Pixels by Rover's Tale. Professional wedding and portrait photographer Akash Mohan, based in Wellington, New Zealand. Capturing beautiful, artistic moments.">
 
-    <meta name="description" content="Timeless Pixels by Rover's Tale. Professional wedding and portrait photographer Aakash Mohan, based in Wellington, New Zealand. Capturing beautiful, artistic moments.">
-    
-    <link rel="stylesheet" href="css/style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- CHANGE: Updated to load Cormorant Garamond (regular and bold) and Dancing Script -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <!-- Cormorant Garamond + Dancing Script -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <a href="#home" class="logo">Timeless Pixels</a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-controls">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark theme">
-                    <div class="toggle-icon"></div>
-                </button>
-                <button class="hamburger-menu" id="hamburger-menu" aria-label="Open navigation menu" aria-expanded="false">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
+  <header>
+    <nav class="container">
+      <a href="#home" class="logo">Timeless Pixels</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark theme">
+          <div class="toggle-icon"></div>
+        </button>
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Open navigation menu" aria-expanded="false">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="hero-text reveal">
+            <h1>The Rover's Tale</h1>
+            <p>Capturing life's most precious moments with an artistic eye and refined sensibility. Every frame tells a story.</p>
+            <p class="lead-copy">
+              Every chapter of life deserves to be remembered beautifully. Life is made of fleeting moments—glimpses of love, joy, and connection. Each frame is crafted to be as unique as the people within it, because a photograph isn’t just a picture—it’s a story waiting to be told.
+            </p>
+            <a href="#works" class="cta-button reveal delay-1">View Portfolio</a>
+          </div>
+          <div class="hero-image reveal delay-2">
+            <div class="photo-frame">
+              <img src="assets/images/hero-main.jpg" alt="Stylish couple in an intimate portrait"/>
             </div>
-        </nav>
-    </header>
-    <main>
-        <section id="home" class="hero">
-            <div class="container hero-inner">
-                <div class="hero-content">
-                    <div class="hero-text reveal">
-                        <h1>The Rover's Tale</h1>
-                        <p>Capturing life's most precious moments with an artistic eye and refined sensibility. Every frame tells a story.</p>
-                        <a href="#works" class="cta-button reveal delay-1">View Portfolio</a>
-                    </div>
-                    <div class="hero-image reveal delay-2">
-                        <div class="photo-frame">
-                            <img src="assets/images/hero-main.jpg" alt="Stylish couple in an intimate portrait" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="about" class="about">
-            <div class="container reveal">
-                <h2 class="section-title">About Aakash Mohan</h2>
-                <div class="about-content">
-                    <div class="about-image">
-                        <img src="assets/images/about-aakash.jpg" alt="Photographer Aakash Mohan" />
-                    </div>
-                    <div class="about-text">
-                        <p>Welcome to my world of visual storytelling. I'm Aakash Mohan, the passionate photographer behind Rover's Tale (roverstale), dedicated to capturing the essence of life's most beautiful moments through my lens.</p>
-                        <p>With years of experience, I believe that every photograph should be a work of art that speaks to the soul, creating truly timeless pixels.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="services" class="services">
-            <div class="container reveal">
-                <h2 class="section-title">Services & Investment</h2>
-                <div class="services-grid">
-                    <div class="service-package">
-                        <h3>The Portrait Experience</h3>
-                        <div class="price">$550</div>
-                        <ul class="features-list">
-                            <li>✓ 90-minute creative session</li>
-                            <li>✓ 25 high-resolution edited images</li>
-                            <li>✓ Private online gallery</li>
-                        </ul>
-                        <a href="#contact" class="cta-button">Book a Session</a>
-                    </div>
-                    <div class="service-package">
-                        <h3>The Wedding Collection</h3>
-                        <div class="price">Starting at $3,500</div>
-                        <ul class="features-list">
-                            <li>✓ 8 hours of coverage</li>
-                            <li>✓ 500+ edited images</li>
-                            <li>✓ Premium online gallery</li>
-                        </ul>
-                        <a href="#contact" class="cta-button">Inquire for Details</a>
-                    </div>
-                    <div class="service-package">
-                        <h3>The Family Moments</h3>
-                        <div class="price">$750</div>
-                        <ul class="features-list">
-                            <li>✓ 2-hour lifestyle session</li>
-                            <li>✓ 40 high-resolution edited images</li>
-                            <li>✓ Private online gallery</li>
-                        </ul>
-                        <a href="#contact" class="cta-button">Capture Memories</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="works" class="works">
-            <div class="container reveal">
-                <h2 class="section-title">My Works</h2>
-                <div class="gallery" id="gallery">
-                    <div class="gallery-item" data-images="assets/images/wedding-01.jpg,assets/images/wedding-02.jpg,assets/images/wedding-03.jpg">
-                        <div class="gallery-image-wrapper">
-                            <img src="assets/images/works-wedding-thumb.jpg" alt="Wedding Photography" />
-                        </div>
-                        <div class="gallery-item-content">
-                            <h3>Wedding Bliss</h3>
-                            <p>Capturing the magic and emotion of your special day.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-images="assets/images/portrait-01.jpg,assets/images/portrait-02.jpg,assets/images/portrait-03.jpg">
-                        <div class="gallery-image-wrapper">
-                            <img src="assets/images/works-portrait-thumb.jpg" alt="Portrait Photography" />
-                        </div>
-                        <div class="gallery-item-content">
-                            <h3>Timeless Portraits</h3>
-                            <p>Professional portraits that reveal your unique personality.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-images="assets/images/family-01.jpg,assets/images/family-02.jpg,assets/images/family-03.jpg">
-                        <div class="gallery-image-wrapper">
-                             <img src="assets/images/works-family-thumb.jpg" alt="Family Photography" />
-                        </div>
-                        <div class="gallery-item-content">
-                            <h3>Family Moments</h3>
-                            <p>Preserving precious family memories with authenticity.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-images="assets/images/art-01.jpg,assets/images/art-02.jpg,assets/images/art-03.jpg">
-                        <div class="gallery-image-wrapper">
-                            <img src="assets/images/works-art-thumb.jpg" alt="Landscape Photography" />
-                        </div>
-                        <div class="gallery-item-content">
-                            <h3>Fine Art</h3>
-                            <p>Artistic landscapes and abstract compositions.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="testimonials" class="testimonials">
-            <div class="container reveal">
-                <h2 class="section-title">What Clients Say</h2>
-                <div class="testimonial-wrap">
-                    <button class="test-prev" aria-label="Previous testimonial">‹</button>
-                    <div class="testimonial-viewport" id="testimonial-viewport">
-                        <div class="testimonial-slide">
-                            <p>"The most beautiful wedding photos we could have ever imagined. Every shot is a masterpiece that captures our love perfectly."</p>
-                            <div class="client">— Sarah & Michael</div>
-                        </div>
-                        <div class="testimonial-slide">
-                            <p>"Professional, artistic, and incredibly talented. Our family portraits are now the centerpiece of our home."</p>
-                            <div class="client">— The Johnson Family</div>
-                        </div>
-                        <div class="testimonial-slide">
-                            <p>"An artist with a camera. The portrait session was comfortable and the results exceeded all expectations."</p>
-                            <div class="client">— Emma Thompson</div>
-                        </div>
-                    </div>
-                    <button class="test-next" aria-label="Next testimonial">›</button>
-                </div>
-                <div class="testimonial-dots" id="testimonial-dots"></div>
-            </div>
-        </section>
-        <section id="contact" class="contact">
-            <div class="container reveal">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Let's Create Something Beautiful</h3>
-                        <p>Ready to capture your special moments? I'd love to hear from you. Please fill out the form, and I'll get back to you shortly.</p>
-                        <p><strong>Email:</strong> 93tiltedframes@gmail.com</p>
-                        <p><strong>Phone:</strong> +64 27 309 1113</p>
-                    </div>
-                    <form class="contact-form" id="contact-form" name="contact" method="POST" data-netlify="true">
-                        <input type="hidden" name="form-name" value="contact" />
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name">
-                            <div class="field-error" aria-live="polite"></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email">
-                             <div class="field-error" aria-live="polite"></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="service">What are you looking for?</label>
-                            <select id="service" name="service">
-                                <option value="">-- Please choose an option --</option>
-                                <option value="Wedding">Wedding Photography</option>
-                                <option value="Portrait">Portrait Session</option>
-                                <option value="Family">Family Moments</option>
-                                <option value="Other">Other</option>
-                            </select>
-                            <div class="field-error" aria-live="polite"></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Tell me about your vision</label>
-                            <textarea id="message" name="message" placeholder="Describe your photography needs..."></textarea>
-                            <div class="field-error" aria-live="polite"></div>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                        <div id="form-status"></div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Timeless Pixels by Aakash Mohan (Rover's Tale). All Rights Reserved.</p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
-        <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
-        <div class="lightbox-content" id="lightbox-content"></div>
-        <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">‹</button>
-        <button class="lightbox-next" id="lightbox-next" aria-label="Next image">›</button>
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="container reveal">
+        <h2 class="section-title">About Akash Mohan</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="assets/images/about-aakash.JPG" alt="Photographer Akash Mohan"/>
+          </div>
+          <div class="about-text">
+            <p>Welcome to my world of visual storytelling. I’m Akash Mohan, the eye behind Rover’s Tale. What began as a passion has grown into a journey of capturing life’s most beautiful moments through my lens. I believe every photograph should hold meaning—something that speaks to the heart and preserves a story worth remembering. For me, it’s not just about pictures; it’s about turning ephemeral moments into timeless memories.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works" class="works">
+      <div class="container reveal">
+        <h2 class="section-title">My Works</h2>
+        <div class="gallery" id="gallery">
+          <div class="gallery-item" data-images="assets/images/wedding-01.JPG,assets/images/wedding-02.JPG,assets/images/wedding-03.JPG">
+            <div class="gallery-image-wrapper">
+              <img src="assets/images/works-wedding-thumb.JPG" alt="Wedding Photography"/>
+            </div>
+            <div class="gallery-item-content">
+              <h3>Pre Wedding Bliss</h3>
+              <p>CCelebrate your love story with intimate and creative sessions.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-images="assets/images/portrait-01.jpg,assets/images/portrait-02.jpg,assets/images/portrait-03.jpg">
+            <div class="gallery-image-wrapper">
+              <img src="assets/images/works-portrait-thumb.JPG" alt="Portrait Photography"/>
+            </div>
+            <div class="gallery-item-content">
+              <h3>Timeless Portraits</h3>
+              <p>Professional portraits that reveal your unique personality.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-images="assets/images/family-01.JPG,assets/images/family-02.JPG,assets/images/family-03.JPG">
+            <div class="gallery-image-wrapper">
+              <img src="assets/images/works-family-thumb.JPG" alt="Family Photography"/>
+            </div>
+            <div class="gallery-item-content">
+              <h3>Maternity Shoots</h3>
+              <p>Tender, elegant sessions celebrating the journey into parenthood.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-images="assets/images/art-01.jpg,assets/images/art-02.jpg,assets/images/art-03.jpg">
+            <div class="gallery-image-wrapper">
+              <img src="assets/images/works-art-thumb.jpg" alt="Fine Art Photography"/>
+            </div>
+            <div class="gallery-item-content">
+              <h3>Fine Art</h3>
+              <p>Artistic landscapes and abstract compositions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES (Offerings only; packages commented) -->
+    <section id="services" class="services">
+      <div class="container reveal">
+        <h2 class="section-title">Services</h2>
+
+        <!-- Services Offered -->
+        <h3 class="services-subtitle">Services Offered</h3>
+        <div class="offerings-grid">
+          <article class="service-offer">
+            <h4>Pre-wedding Shoots</h4>
+            <p>Celebrate your love story with intimate, creative sessions.</p>
+          </article>
+          <article class="service-offer">
+            <h4>Maternity Sessions</h4>
+            <p>Cherish the magic of expecting a new life.</p>
+          </article>
+          <article class="service-offer">
+            <h4>Baby Showers</h4>
+            <p>Be among the first to have your special celebration captured.</p>
+          </article>
+          <article class="service-offer">
+            <h4>Newborn &amp; Baby Portraits</h4>
+            <p>Capturing the innocence and wonder of your little one.</p>
+          </article>
+          <article class="service-offer">
+            <h4>Family Portraits</h4>
+            <p>Warm, authentic memories you’ll treasure forever.</p>
+          </article>
+          <article class="service-offer">
+            <h4>Individual &amp; Creative Portraits</h4>
+            <p>Show your personality through artful photography.</p>
+          </article>
+          <article class="service-offer">
+            <h4>Aerial &amp; Drone Photography</h4>
+            <p>Bring moments to life from breathtaking perspectives.</p>
+          </article>
+        </div>
+
+        <!--
+        <h3 class="services-subtitle mt">Packages &amp; Investment</h3>
+        <div class="services-grid">
+          <div class="service-package">
+            <h3>The Portrait Experience</h3>
+            <div class="price">$550</div>
+            <ul class="features-list">
+              <li>✓ 90-minute creative session</li>
+              <li>✓ 25 high-resolution edited images</li>
+              <li>✓ Private online gallery</li>
+            </ul>
+            <a href="#contact" class="cta-button">Book a Session</a>
+          </div>
+          <div class="service-package">
+            <h3>The Wedding Collection</h3>
+            <div class="price">Starting at $3,500</div>
+            <ul class="features-list">
+              <li>✓ 8 hours of coverage</li>
+              <li>✓ 500+ edited images</li>
+              <li>✓ Premium online gallery</li>
+            </ul>
+            <a href="#contact" class="cta-button">Inquire for Details</a>
+          </div>
+          <div class="service-package">
+            <h3>The Family Moments</h3>
+            <div class="price">$750</div>
+            <ul class="features-list">
+              <li>✓ 2-hour lifestyle session</li>
+              <li>✓ 40 high-resolution edited images</li>
+              <li>✓ Private online gallery</li>
+            </ul>
+            <a href="#contact" class="cta-button">Capture Memories</a>
+          </div>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials">
+      <div class="container reveal">
+        <h2 class="section-title">What Clients Say</h2>
+        <div class="testimonial-wrap">
+          <button class="test-prev" aria-label="Previous testimonial">‹</button>
+          <div class="testimonial-viewport" id="testimonial-viewport">
+            <div class="testimonial-slide">
+              <p>“Aakash made us feel so relaxed—more like a fun date than a shoot. Gentle guidance, genuine moments, and photos full of emotion. We’ll cherish them forever.”</p>
+              <div class="client">— Sourav &amp; Alina, New Zealand</div>
+            </div>
+            <div class="testimonial-slide">
+              <p>“Patient, creative, and professional. He understood our vibe instantly and turned simple moments into elegant frames. Couldn’t be happier.”</p>
+              <div class="client">— Safal &amp; Akshara, India</div>
+            </div>
+            <div class="testimonial-slide">
+              <p>“Calm direction, beautiful light, and genuine smiles—Aakash captured us exactly as we are. Seamless from planning to delivery.”</p>
+              <div class="client">— Benit &amp; Shelvin, New Zealand</div>
+            </div>
+          </div>
+          <button class="test-next" aria-label="Next testimonial">›</button>
+        </div>
+        <div class="testimonial-dots" id="testimonial-dots"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container reveal">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let’s Create Something Beautiful Together</h3>
+            <p>I’d love to help capture your special moments and turn them into memories you’ll cherish. Fill out the form below with your details, and I’ll get back to you as soon as possible.</p>
+            <p><strong>Email:</strong> 93tiltedframes@gmail.com</p>
+            <p><strong>Phone:</strong> +64 27 309 113</p>
+            <p class="small-note">I usually respond within 24–48 hours and can’t wait to hear from you!</p>
+          </div>
+
+          <form class="contact-form" id="contact-form" name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact"/>
+
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name"/>
+              <div class="field-error" aria-live="polite"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com"/>
+              <div class="field-error" aria-live="polite"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="session_type">What type of session are you interested in?</label>
+              <input list="session-options" id="session_type" name="session_type" placeholder="e.g., pre-wedding, maternity, family portraits, drone shots"/>
+              <datalist id="session-options">
+                <option value="Pre-wedding"/>
+                <option value="Maternity"/>
+                <option value="Baby Shower"/>
+                <option value="Newborn & Baby Portraits"/>
+                <option value="Family Portraits"/>
+                <option value="Individual / Creative Portraits"/>
+                <option value="Aerial / Drone Photography"/>
+              </datalist>
+              <div class="field-error" aria-live="polite"></div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="preferred_date">Preferred Date</label>
+                <input type="date" id="preferred_date" name="preferred_date"/>
+                <div class="field-error" aria-live="polite"></div>
+              </div>
+              <div class="form-group">
+                <label for="preferred_location">Preferred Location</label>
+                <input type="text" id="preferred_location" name="preferred_location" placeholder="e.g., Wellington Botanic Garden"/>
+                <div class="field-error" aria-live="polite"></div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell me about your vision</label>
+              <textarea id="message" name="message" placeholder="Describe your photography needs..."></textarea>
+              <div class="field-error" aria-live="polite"></div>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+            <div id="form-status" class="form-status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Timeless Pixels by Akash Mohan (Rover's Tale). All Rights Reserved.</p>
     </div>
+  </footer>
 
-    <script src="js/main.js" defer></script>
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <div class="lightbox-content" id="lightbox-content"></div>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">‹</button>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Next image">›</button>
+  </div>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>
